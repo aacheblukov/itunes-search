@@ -2,16 +2,16 @@
   position: relative;
   width: 400px;
   height: 250px;
+  margin: 0 15px 30px 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 20px;
   border: 1px solid #008080;
   border-radius: 10px;
-  transition: background .3s ease;
+  transition: background 0.3s ease;
 }
 .song-item:hover {
-  background: rgba(0,0,0,.15)
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .play {
@@ -21,7 +21,7 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 15px; /* размер и форма */ 
-  border-color: transparent transparent transparent red;  /* red — цвет */ 
+  border-width: 15px;
+  border-color: transparent transparent transparent red;
   filter: drop-shadow(0 0 5px #000);
- }
+}
