@@ -7,23 +7,19 @@ const status = response => {
   }
   return Promise.resolve(response);
 };
-const json = data => {
-  if (typeof data === "string") return data;
-  return data.json();
-};
 
-export const singerITunesApi = singer => {
-  let singerForSearch = singer.split(" ").join("+");
+export const searchSinger = query => {
+  const searchQuery = query.split(" ").join("+");
   return new Promise((resolve, reject) => {
     try {
       fetch(
-        `https://cors-anywhere.herokuapp.com/https://itunes.apple.com/search?term=${singerForSearch}&limit=500`,
+        `https://cors-anywhere.herokuapp.com/https://itunes.apple.com/search?term=${searchQuery}&limit=500`,
         {}
       )
         .then(status)
-        .then(json)
+        .then(data => data.json())
         .then(data => {
-          resolve(data);
+          resolve(data.results);
         });
     } catch (error) {
       reject(new Error(error));

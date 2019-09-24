@@ -1,0 +1,38 @@
+.song-item {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  margin: 0 15px 30px 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #16b7cc;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+.song-item:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+.cover {
+  width: 100px;
+  height: 100px;
+}
+.track-info {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+.play {
+  background: url("../../img/play.svg") no-repeat center;
+}
+.pause {
+  background: url("../../img/pause.svg") no-repeat center;
+}
+.song-icon {
+  position: absolute;
+  bottom: 30px;
+  right: 45px;
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+}
