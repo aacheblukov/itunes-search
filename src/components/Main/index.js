@@ -6,7 +6,8 @@ import { SingerInput, SongInput } from "../Inputs";
 import "antd/dist/antd.css";
 import "./style.css";
 const ITunesSearch = () => {
-  const { audioSrc } = useSelector(s => s);
+  const { audioSrc } = useSelector((s) => s);
+  console.debug("");
   return (
     <>
       <h1 className="header">Search singers via Itunes API</h1>
