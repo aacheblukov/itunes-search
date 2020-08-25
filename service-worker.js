@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/itunes-search/tree/master/precache-manifest.e24d15806b12c43554cecc3bb67a85c5.js"
+  "/itunes-search/precache-manifest.bbfdcfb68e82438998430fc62ec5c43e.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/itunes-search/tree/master/index.html", {
+workbox.routing.registerNavigationRoute("/itunes-search/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
